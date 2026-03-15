@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://cx4e4666jihef"]
+
+[ext_resource type="Script" uid="uid://bfk6y2v12ljb" path="res://scripts/machine.gd" id="1_73k52"]
+[ext_resource type="Texture2D" uid="uid://bkyb5jmtb8o85" path="res://sprites/base_tile_ms.png" id="1_a5lir"]
+[ext_resource type="Script" uid="uid://rkaxtn80ldl7" path="res://scripts/resource_definitions/machine_definition.gd" id="2_448ux"]
+[ext_resource type="Script" uid="uid://5l4o4r6d463r" path="res://scripts/resource_definitions/port_definition.gd" id="2_i4f25"]
+
+[sub_resource type="Resource" id="Resource_i4f25"]
+script = ExtResource("2_448ux")
+metadata/_custom_type_script = "uid://rkaxtn80ldl7"
+
+[node name="Machine" type="Node2D" unique_id=789845287]
+script = ExtResource("1_73k52")
+machine_resource = SubResource("Resource_i4f25")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1344905572]
+texture_filter = 1
+texture = ExtResource("1_a5lir")

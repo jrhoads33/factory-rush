@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://bso257pts12be"]
+
+[ext_resource type="Texture2D" uid="uid://b3n7dm6gd2q0s" path="res://sprites/hover.png" id="1_ws4in"]
+[ext_resource type="Script" uid="uid://ca7rikyj2k5fp" path="res://scripts/select_hover.gd" id="2_ns7d0"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ah2mx"]
+texture = ExtResource("1_ws4in")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_vburt"]
+tile_size = Vector2i(32, 32)
+sources/0 = SubResource("TileSetAtlasSource_ah2mx")
+
+[node name="SelectHover" type="TileMapLayer" unique_id=1060354274]
+tile_set = SubResource("TileSet_vburt")
+script = ExtResource("2_ns7d0")
