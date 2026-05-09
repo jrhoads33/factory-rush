@@ -10,7 +10,3 @@ func _ready() -> void:
 	
 	for cord in map_data_dict:
 		set_cell(cord, 0, Vector2i(0,0),0)
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass

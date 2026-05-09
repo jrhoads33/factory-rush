@@ -1,10 +1,11 @@
 extends Node2D
 
-@export var item_definition : ItemDefinition
+@export var item_resource : Item
+
+var id : String
 
 func _ready() -> void:
-	if item_definition.texture:
-		$Sprite2D.texture = item_definition.texture
+	id = item_resource.item_id if item_resource.item_id else "metal"
 
 
 func _process(delta: float) -> void:

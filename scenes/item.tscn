@@ -2,18 +2,9 @@
 
 [ext_resource type="Texture2D" uid="uid://32pfx1tyg8sr" path="res://sprites/item.png" id="1_4gq7n"]
 [ext_resource type="Script" uid="uid://bsln65lamkuc1" path="res://scripts/item.gd" id="1_s8enn"]
-[ext_resource type="Script" uid="uid://ro00kvle701y" path="res://scripts/resource_definitions/item_definition.gd" id="2_6muww"]
-
-[sub_resource type="Resource" id="Resource_vljjh"]
-script = ExtResource("2_6muww")
-id = "0"
-display_name = "wood"
-texture = ExtResource("1_4gq7n")
-metadata/_custom_type_script = "uid://ro00kvle701y"
 
 [node name="Item" type="Node2D" unique_id=674799371]
 script = ExtResource("1_s8enn")
-item_definition = SubResource("Resource_vljjh")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1741294974]
 texture_filter = 1

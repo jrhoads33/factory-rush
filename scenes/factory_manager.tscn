@@ -3,8 +3,6 @@
 [ext_resource type="Script" uid="uid://pvd5js8cj4is" path="res://scripts/factory_manager.gd" id="1_vlkmt"]
 [ext_resource type="PackedScene" uid="uid://bagfqrmsiprhx" path="res://scenes/level1.tscn" id="1_xghbp"]
 [ext_resource type="PackedScene" uid="uid://bso257pts12be" path="res://scenes/select_hover.tscn" id="2_fwkfo"]
-[ext_resource type="PackedScene" uid="uid://cx4e4666jihef" path="res://scenes/machine.tscn" id="4_8tkgl"]
-[ext_resource type="Resource" uid="uid://btfbk5hpe7kvk" path="res://data/machines/converyer.tres" id="5_28sjo"]
 [ext_resource type="PackedScene" uid="uid://c45md6xgmovbi" path="res://scenes/player.tscn" id="6_u4duj"]
 [ext_resource type="PackedScene" uid="uid://ca1woy7mxw7oi" path="res://scenes/MachineContainer.tscn" id="7_hctn2"]
 
@@ -14,9 +12,6 @@ script = ExtResource("1_vlkmt")
 [node name="Level1" parent="." unique_id=154547636 instance=ExtResource("1_xghbp")]
 
 [node name="MachineContainer" parent="." unique_id=1345146759 instance=ExtResource("7_hctn2")]
-
-[node name="Machine" parent="MachineContainer" unique_id=789845287 instance=ExtResource("4_8tkgl")]
-machine_resource = ExtResource("5_28sjo")
 
 [node name="SelectHover" parent="." unique_id=1060354274 instance=ExtResource("2_fwkfo")]
 

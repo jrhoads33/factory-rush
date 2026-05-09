@@ -16,3 +16,25 @@ machine_resource = SubResource("Resource_i4f25")
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1344905572]
 texture_filter = 1
 texture = ExtResource("1_a5lir")
+
+[node name="InventoryLabel" type="Label" parent="." unique_id=291047808]
+texture_filter = 1
+offset_left = -16.0
+offset_top = -39.0
+offset_right = 18.0
+offset_bottom = -16.0
+theme_override_font_sizes/font_size = 10
+
+[node name="ProcessTimer" type="Timer" parent="." unique_id=1400512372]
+autostart = true
+
+[node name="GenerateTimer" type="Timer" parent="." unique_id=1145743761]
+wait_time = 10.0
+autostart = true
+
+[node name="DebugTimer" type="Timer" parent="." unique_id=446231394]
+autostart = true
+
+[connection signal="timeout" from="ProcessTimer" to="." method="_on_process_timer_timeout"]
+[connection signal="timeout" from="GenerateTimer" to="." method="_on_generate_timer_timeout"]
+[connection signal="timeout" from="DebugTimer" to="." method="_on_debug_timer_timeout"]

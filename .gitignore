@@ -1,0 +1,25 @@
+# Godot 4 generated files
+.godot/
+
+# Godot-specific ignores
+*.translation
+
+# Import files are auto-generated — only ignore if you don't want to track them
+# (keeping .import files is recommended for teams; remove the next line if solo)
+# *.import
+
+# macOS
+.DS_Store
+
+# Build exports
+exports/
+*.exe
+*.x86_64
+*.x86
+*.arm64
+*.arm
+*.pck
+*.zip
+
+CLAUDE.md
+*.vscode

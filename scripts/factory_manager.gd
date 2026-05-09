@@ -9,6 +9,16 @@ var grid: Dictionary = {}  # Vector2i → TileData
 
 func _ready() -> void:
 	GameManager.factory_manager = self
+	setup_default_machines()
+	
+
+func setup_default_machines() -> void:
+	var machine_scene = preload("res://scenes/machine.tscn")
+	var conveyor = preload("res://data/machines/converyer.tres")
+
+	place_machine(Vector2i(0, 0), machine_scene, conveyor)
+	place_machine(Vector2i(1, 0), machine_scene, conveyor)
+
 
 func get_tile(coords: Vector2i) -> TileCellData:
 	return grid.get(coords, null)
@@ -17,6 +27,7 @@ func is_occupied(coords: Vector2i) -> bool:
 	return grid.has(coords) and grid[coords].machine_ref != null
 
 func place_machine(coords: Vector2i, machine_scene: PackedScene, resource: Resource) -> bool:
+	"""Places a Machine scene in the factory scene"""
 	if is_occupied(coords):
 		return false
 	var world_pos = tile_layer.map_to_local(coords)
@@ -24,6 +35,7 @@ func place_machine(coords: Vector2i, machine_scene: PackedScene, resource: Resou
 	machine.machine_resource = resource
 	machine.position = world_pos
 	machine.grid_pos = coords
+	machine.setup_inventory()
 	machine_container.add_child(machine)
 
 	if not grid.has(coords):

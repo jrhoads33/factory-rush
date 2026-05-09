@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="Item" format=3 uid="uid://bjo7obewwgmtx"]
+
+[ext_resource type="Script" uid="uid://cteq3c0wqun6q" path="res://scripts/resource_definitions/stone_item.gd" id="1_stdgd"]
+
+[resource]
+script = ExtResource("1_stdgd")
+metadata/_custom_type_script = "uid://cteq3c0wqun6q"

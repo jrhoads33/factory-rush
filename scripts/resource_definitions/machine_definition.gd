@@ -10,3 +10,6 @@ extends Resource
 @export var ports: Array[PortDefinition] = []
 @export var location: Vector2i = Vector2i(0,0)
 @export var orientation: int = 0
+
+# --- inventory specs ---
+@export var inventory_slots: int = 10
