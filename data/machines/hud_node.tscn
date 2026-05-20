@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://p4mmeckiifb2"]
+
+[node name="HUDNode" type="CanvasLayer" unique_id=346003252]
+
+[node name="ScoreLabel" type="Label" parent="." unique_id=1045332216]
+offset_left = 103.0
+offset_top = 63.0
+offset_right = 237.0
+offset_bottom = 132.0
+theme_override_font_sizes/font_size = 48
+text = "Score : 0"
+
+[node name="Click Inv" type="Label" parent="." unique_id=1474379302]
+offset_left = 103.0
+offset_top = 171.0
+offset_right = 321.0
+offset_bottom = 238.0
+theme_override_font_sizes/font_size = 48
+text = "Conveyer"

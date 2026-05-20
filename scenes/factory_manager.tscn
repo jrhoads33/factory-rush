@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://bagfqrmsiprhx" path="res://scenes/level1.tscn" id="1_xghbp"]
 [ext_resource type="PackedScene" uid="uid://bso257pts12be" path="res://scenes/select_hover.tscn" id="2_fwkfo"]
 [ext_resource type="PackedScene" uid="uid://c45md6xgmovbi" path="res://scenes/player.tscn" id="6_u4duj"]
+[ext_resource type="PackedScene" uid="uid://p4mmeckiifb2" path="res://data/machines/hud_node.tscn" id="6_vlkmt"]
 [ext_resource type="PackedScene" uid="uid://ca1woy7mxw7oi" path="res://scenes/MachineContainer.tscn" id="7_hctn2"]
 
 [node name="FactoryManager" type="Node2D" unique_id=1157974351]
@@ -16,3 +17,5 @@ script = ExtResource("1_vlkmt")
 [node name="SelectHover" parent="." unique_id=1060354274 instance=ExtResource("2_fwkfo")]
 
 [node name="Player" parent="." unique_id=657955515 instance=ExtResource("6_u4duj")]
+
+[node name="HUDNode" parent="." unique_id=346003252 instance=ExtResource("6_vlkmt")]
