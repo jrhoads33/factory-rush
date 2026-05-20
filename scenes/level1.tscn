@@ -1,17 +1,18 @@
 [gd_scene format=3 uid="uid://bagfqrmsiprhx"]
 
-[ext_resource type="Texture2D" uid="uid://cd0l1bh4r31w6" path="res://sprites/base_tiles-Sheet.png" id="1_g2h75"]
+[ext_resource type="Texture2D" uid="uid://c8dxp5ewn1efw" path="res://sprites/floor_sheet-Sheet.png" id="1_wwpf4"]
 [ext_resource type="Script" uid="uid://dulrpcme17vc1" path="res://scripts/level_1.gd" id="2_ru4tf"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wwpf4"]
-texture = ExtResource("1_g2h75")
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_m7ahb"]
+texture = ExtResource("1_wwpf4")
 texture_region_size = Vector2i(32, 32)
 0:0/0 = 0
 1:0/0 = 0
+2:0/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_m7ahb"]
 tile_size = Vector2i(32, 32)
-sources/0 = SubResource("TileSetAtlasSource_wwpf4")
+sources/0 = SubResource("TileSetAtlasSource_m7ahb")
 
 [node name="Level1" type="TileMapLayer" unique_id=154547636]
 texture_filter = 1

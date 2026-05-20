@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://5l4o4r6d463r" path="res://scripts/resource_definitions/port_definition.gd" id="1_q1664"]
 [ext_resource type="Script" uid="uid://rkaxtn80ldl7" path="res://scripts/resource_definitions/machine_definition.gd" id="2_vl1i2"]
-[ext_resource type="Texture2D" uid="uid://bkyb5jmtb8o85" path="res://sprites/base_tile_ms.png" id="3_vl1i2"]
+[ext_resource type="Texture2D" uid="uid://drvssklukitmp" path="res://sprites/conveyer.png" id="3_vl1i2"]
 
 [sub_resource type="Resource" id="Resource_5duni"]
 script = ExtResource("1_q1664")

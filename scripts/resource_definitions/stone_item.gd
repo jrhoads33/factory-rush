@@ -1,4 +1,3 @@
-# item.gd
 class_name Item
 extends Resource
 

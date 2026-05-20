@@ -8,8 +8,8 @@ extends Resource
 @export var process_time: float = 1.0
 @export var recipe_category: String = ""
 @export var ports: Array[PortDefinition] = []
-@export var location: Vector2i = Vector2i(0,0)
+@export var location: Vector2i = Vector2i(0, 0)
 @export var orientation: int = 0
-
-# --- inventory specs ---
+@export var process_ticks: int = 1
+@export var generation_ticks: int = 5
 @export var inventory_slots: int = 10
