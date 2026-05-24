@@ -2,6 +2,10 @@ extends Node
 
 var factory_manager: FactoryManager = null
 
+enum MachineType {CONVEYER, HOPPER}
+
+
+
 
 func place_machine(coords: Vector2i, machine_scene: PackedScene, resource: MachineDefinition) -> bool:
 	if factory_manager == null:
