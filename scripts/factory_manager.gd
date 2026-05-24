@@ -14,10 +14,9 @@ func _ready() -> void:
 
 
 func setup_default_machines() -> void:
-	var machine_scene: PackedScene = preload("res://scenes/machine.tscn")
 	var conveyor: MachineDefinition = preload("res://data/machines/converyer.tres")
-	place_machine(Vector2i(0, 0), machine_scene, conveyor)
-	place_machine(Vector2i(1, 0), machine_scene, conveyor)
+	place_machine(Vector2i(0, 0), conveyor)
+	place_machine(Vector2i(1, 0), conveyor)
 
 
 func get_tile(coords: Vector2i) -> TileCellData:
@@ -28,11 +27,11 @@ func is_occupied(coords: Vector2i) -> bool:
 	return grid.has(coords) and grid[coords].machine_ref != null
 
 
-func place_machine(coords: Vector2i, machine_scene: PackedScene, resource: Resource) -> bool:
+func place_machine(coords: Vector2i, resource: MachineDefinition) -> bool:
 	if is_occupied(coords):
 		return false
 	var world_pos: Vector2 = tile_layer.map_to_local(coords)
-	var machine: Node2D = machine_scene.instantiate()
+	var machine: Node2D = resource.scene.instantiate()
 	machine.machine_resource = resource
 	machine.position = world_pos
 	machine.grid_pos = coords

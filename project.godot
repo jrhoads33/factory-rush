@@ -19,6 +19,7 @@ config/icon="res://sprites/icon.svg"
 
 GameManager="*uid://dlrvw1bfp1ciu"
 TickManager="*uid://bsl3eekw4bypd"
+MachineDict="*uid://dcbr4bxkr2ssd"
 
 [display]
 

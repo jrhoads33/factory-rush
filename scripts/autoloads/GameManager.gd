@@ -7,10 +7,10 @@ enum MachineType {CONVEYER, HOPPER}
 
 
 
-func place_machine(coords: Vector2i, machine_scene: PackedScene, resource: MachineDefinition) -> bool:
+func place_machine(coords: Vector2i, resource: MachineDefinition) -> bool:
 	if factory_manager == null:
 		return false
-	return factory_manager.place_machine(coords, machine_scene, resource)
+	return factory_manager.place_machine(coords, resource)
 
 
 func attempt_rotate_machine(coords: Vector2i) -> bool:

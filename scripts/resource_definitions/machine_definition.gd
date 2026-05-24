@@ -13,3 +13,4 @@ extends Resource
 @export var process_ticks: int = 1
 @export var generation_ticks: int = 5
 @export var inventory_slots: int = 10
+@export var scene: PackedScene = null

@@ -2,10 +2,10 @@
 
 [ext_resource type="PackedScene" uid="uid://cx4e4666jihef" path="res://scenes/machine.tscn" id="1_3c8pp"]
 [ext_resource type="Texture2D" uid="uid://bl75iyfvwom7d" path="res://sprites/hopper.png" id="2_a2wdo"]
-[ext_resource type="Script" uid="uid://dm1px0yw2qjer" path="res://scripts/hoppper.gd" id="2_cfal0"]
+[ext_resource type="Script" uid="uid://khxf7jytterb" path="res://scripts/hopper.gd" id="2_xv8w4"]
 
 [node name="Hopper" unique_id=789845287 instance=ExtResource("1_3c8pp")]
-script = ExtResource("2_cfal0")
+script = ExtResource("2_xv8w4")
 machine_resource = null
 
 [node name="Sprite2D" parent="." index="0" unique_id=1344905572]

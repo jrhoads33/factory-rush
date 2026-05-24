@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://5l4o4r6d463r" path="res://scripts/resource_definitions/port_definition.gd" id="1_4a3vc"]
 [ext_resource type="Script" uid="uid://rkaxtn80ldl7" path="res://scripts/resource_definitions/machine_definition.gd" id="2_48n1d"]
+[ext_resource type="PackedScene" uid="uid://h3iceslc2d8d" path="res://scenes/hopper.tscn" id="2_or744"]
 [ext_resource type="Texture2D" uid="uid://bl75iyfvwom7d" path="res://sprites/hopper.png" id="3_48n1d"]
 
 [resource]
@@ -11,4 +12,5 @@ display_name = "collector hopper"
 texture = ExtResource("3_48n1d")
 process_ticks = -1
 generation_ticks = -1
+scene = ExtResource("2_or744")
 metadata/_custom_type_script = "uid://rkaxtn80ldl7"
